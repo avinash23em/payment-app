@@ -37,6 +37,12 @@ const user=await User.create({
     password:body.password
 })
 const userid=user._id;
+   
+await Account.create({
+    userId,
+    balance: 1 + Math.random() * 10000
+})
+ 
 const token=jwt.sign({
     userid
 },JWT_SECRET)
