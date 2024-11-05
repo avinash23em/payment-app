@@ -56,6 +56,8 @@ export const SendMoney = () => {
                 </div>
                 </div>
         </div>
+        
       </div>
+
     </div>
 }
